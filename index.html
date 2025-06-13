@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elegant Image Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>IMAGE GALLERY</h1>
+        <p>Capturing the beauty of life through photography</p>
+    </header>
+
+    <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nature">Nature</button>
+        <button class="filter-btn" data-filter="urban">Urban</button>
+        <button class="filter-btn" data-filter="people">People</button>
+    </div>
+
+    <div class="gallery-container">
+        <div class="gallery">
+            <!-- Images will be added by JavaScript -->
+        </div>
+
+        <div class="gallery-controls">
+            <button id="prev-btn" class="nav-btn"><i class="fas fa-chevron-left"></i></button>
+            <button id="next-btn" class="nav-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="close-btn">&times;</span>
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="" alt="">
+            <div class="lightbox-caption"></div>
+            <button class="lightbox-nav prev-lightbox"><i class="fas fa-chevron-left"></i></button>
+            <button class="lightbox-nav next-lightbox"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Moments Gallery</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
